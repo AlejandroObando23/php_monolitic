@@ -4,10 +4,10 @@ class Database {
 
     public static function getConnection() {
         if (self::$pdo == null) {
-            $host = getenv('DB_HOST') ?: 'db.rxxrpqnskeetxgfinbbb.supabase.co';
-            $port = getenv('DB_PORT') ?: '5432';
+            $host = getenv('DB_HOST') ?: 'aws-1-us-west-1.pooler.supabase.com';
+            $port = getenv('DB_PORT') ?: '6543';
             $dbname = getenv('DB_NAME') ?: 'postgres';
-            $user = getenv('DB_USER') ?: 'postgres';
+            $user = getenv('DB_USER') ?: 'postgres.rxxrpqnskeetxgfinbbb';
             $password = getenv('DB_PASS') ?: 'AlejandroObando23.';
 
             $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
